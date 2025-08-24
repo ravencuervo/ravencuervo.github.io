@@ -4,217 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerson Romario Gomez Cahuana - Perfil Profesional</title>
-    <style>
-        :root {
-            --primary: #14532d;
-            --secondary: #22c55e;
-            --accent: #bbf7d0;
-            --background: #f0fdf4;
-            --white: #fff;
-            --shadow: 0 4px 24px rgba(20,83,45,0.08);
-            --radius: 16px;
-            --transition: 0.3s cubic-bezier(.4,0,.2,1);
-            --panel: #e7fbe9;
-            --panel-dark: #bbf7d0;
-        }
-        body {
-            background: var(--background);
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: var(--primary);
-            min-height: 100vh;
-        }
-        .main-layout {
-            display: flex;
-            flex-direction: row;
-            max-width: 1200px;
-            margin: 40px auto;
-            gap: 32px;
-        }
-        .sidebar {
-            flex: 1 1 320px;
-            background: var(--panel);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 32px 24px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 270px;
-            max-width: 350px;
-            animation: fadeInLeft 1s;
-        }
-        .perfil-container {
-            flex: 2 1 0;
-            background: var(--white);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 40px 32px;
-            transition: box-shadow var(--transition);
-            overflow: hidden;
-            animation: fadeInUp 1s;
-        }
-        .perfil-container:hover {
-            box-shadow: 0 8px 32px rgba(20,83,45,0.16);
-        }
-        .nombre {
-            font-size: 2.2em;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 4px;
-            letter-spacing: 1px;
-            text-align: center;
-        }
-        .titulo {
-            color: var(--secondary);
-            font-size: 1.15em;
-            margin-bottom: 24px;
-            font-weight: 500;
-            text-align: center;
-        }
-        .encabezado {
-            width: 100%;
-            background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
-            color: var(--primary);
-            border-radius: var(--radius) var(--radius) 0 0;
-            padding: 24px 0 16px 0;
-            margin-bottom: 24px;
-            box-shadow: 0 2px 8px rgba(34,197,94,0.08);
-            text-align: center;
-        }
-        .foto-perfil {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            background: var(--accent);
-            margin-bottom: 18px;
-            object-fit: cover;
-            border: 4px solid var(--secondary);
-            box-shadow: 0 2px 8px rgba(34,197,94,0.12);
-        }
-        .seccion {
-            margin-bottom: 32px;
-        }
-        .seccion h2 {
-            font-size: 1.13em;
-            color: var(--secondary);
-            margin-bottom: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            border-left: 4px solid var(--secondary);
-            padding-left: 10px;
-        }
-        .experiencia-lista, .cert-lista {
-            margin-top: 8px;
-        }
-        .experiencia-item, .cert-item {
-            background: var(--panel-dark);
-            border-radius: 10px;
-            padding: 16px 18px;
-            margin-bottom: 14px;
-            box-shadow: 0 2px 8px rgba(34,197,94,0.06);
-            transition: background var(--transition), box-shadow var(--transition);
-        }
-        .experiencia-item:hover, .cert-item:hover {
-            background: var(--secondary);
-            color: var(--white);
-            box-shadow: 0 4px 16px rgba(34,197,94,0.13);
-        }
-        .experiencia-cargo, .cert-titulo {
-            font-weight: 600;
-            color: var(--primary);
-            font-size: 1.08em;
-        }
-        .experiencia-empresa, .cert-entidad {
-            color: var(--secondary);
-            font-size: 1em;
-            font-weight: 500;
-        }
-        .experiencia-periodo, .experiencia-ubicacion, .cert-fecha, .cert-id {
-            font-size: 0.97em;
-            color: #388e3c;
-        }
-        .experiencia-descripcion, .cert-aptitudes {
-            margin-top: 6px;
-            font-size: 0.98em;
-            color: #14532d;
-        }
-        .habilidades-lista {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .habilidad {
-            background: var(--secondary);
-            color: var(--white);
-            border-radius: 6px;
-            padding: 6px 14px;
-            font-size: 0.98em;
-            font-weight: 500;
-            transition: background var(--transition);
-        }
-        .habilidad:hover {
-            background: #166534;
-        }
-        .contacto-lista {
-            margin-top: 10px;
-        }
-        .contacto-lista li {
-            margin-bottom: 8px;
-        }
-        .contacto-lista a {
-            color: var(--primary);
-            text-decoration: none;
-            transition: color var(--transition);
-            font-weight: 500;
-        }
-        .contacto-lista a:hover {
-            color: var(--secondary);
-            text-decoration: underline;
-        }
-        @media (max-width: 900px) {
-            .main-layout {
-                flex-direction: column;
-                gap: 0;
-            }
-            .sidebar {
-                max-width: 100%;
-                margin-bottom: 24px;
-            }
-            .perfil-container {
-                padding: 24px 8vw;
-            }
-        }
-        @media (max-width: 600px) {
-            .perfil-container {
-                padding: 12px 2vw;
-            }
-            .sidebar {
-                padding: 18px 2vw;
-            }
-            .nombre {
-                font-size: 1.3em;
-            }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px);}
-            to { opacity: 1; transform: translateY(0);}
-        }
-        @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-30px);}
-            to { opacity: 1; transform: translateX(0);}
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="encabezado">
-        <h1 style="margin:0;font-size:2.1em;letter-spacing:2px;">Perfil Profesional</h1>
+        <h1>Perfil Profesional</h1>
     </div>
     <div class="main-layout">
         <aside class="sidebar">
             <!-- Puedes agregar tu foto aquí -->
-            <!-- <img src="tu-foto.jpg" alt="Foto de perfil" class="foto-perfil"> -->
+            <img src="imagenes/foto_perfil.jpg" alt="Foto de perfil" class="foto-perfil">
             <div class="nombre">Jerson Romario Gomez Cahuana</div>
             <div class="titulo">Ingeniero Electrónico<br>Especialista en Telecomunicaciones, Telemática y Redes</div>
             <div class="seccion">
@@ -389,4 +188,11 @@
                     <div class="cert-item">
                         <div class="cert-titulo">X Congreso Internacional de Telecomunicaciones y Temática, Automatización e Instrumentación COINTTEC – 2020</div>
                         <div class="cert-entidad">Sección Perú del IEEE</div>
-                        <div class=
+                        <div class="cert-fecha">Expedición: nov. 2020</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
