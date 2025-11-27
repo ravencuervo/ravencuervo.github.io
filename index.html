@@ -1,339 +1,969 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Jerson Romario Gomez Cahuana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing. Jerson Romario Gomez Cahuana - Perfil Profesional</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo_raven.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- Icon -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
 
 </head>
+
 <body>
-    <!-- Header con navegación -->
-    <header>
-        <nav>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
             <div class="logo">
-                <i class="fas fa-code"></i>
-                <span>Perfil Profesional</span>
+                <img src="images/logo.png" height="20" class="d-block mx-auto" alt="">
             </div>
-            <div class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#perfil">Perfil</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#certificaciones">Certificaciones</a>
-                <a href="#contacto">Contacto</a>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
             </div>
-        </nav>
-    </header>
-
-    <!-- SLIDER DE FOTOS (Bootstrap Carousel) -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicadores -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-    </div>
-
-    <!-- Slides -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-        <img src="slide1.jpg" class="d-block w-100" alt="Foto 1">
-        </div>
-        <div class="carousel-item">
-        <img src="slide2.jpg" class="d-block w-100" alt="Foto 2">
-        </div>
-        <div class="carousel-item">
-        <img src="slide3.jpg" class="d-block w-100" alt="Foto 3">
         </div>
     </div>
+    <!-- Loader -->
 
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span data-feather="menu" class="fea icon-md"></span>
+            </button><!--end button-->
 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-link mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li><!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mi</a>
+                    </li><!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li><!--end nav item-->
 
-    <div class="main-layout">
-        <aside class="sidebar">
-            <!-- Tarjeta de perfil -->
-            <div class="profile-card">
-                <!-- Puedes agregar tu foto aquí -->
-                <img src="foto_perfil.jpg" alt="Foto de perfil" class="foto-perfil">
-                <div class="nombre">Jerson Romario Gomez Cahuana</div>
-                <div class="titulo">Ingeniero Electrónico<br> | Redes y Telecomunicaciones | Informática | Estadística | Estudiante de Maestría en Informática</div>
-            </div>
-
-            <div class="seccion" id="contacto">
-                <h2><i class="fas fa-envelope"></i> Contacto</h2>
-                <ul class="contacto-lista">
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:fav159yu@gmail.com">fav159yu@gmail.com</a></li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/romario-gomez/" target="_blank">romario-gomez</a></li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/ravencuervo" target="_blank">github.com/ravencuervo</a></li>
-                    <li><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@jersonromariogomezcahuana8454" target="_blank">@jersonromariogomezcahuana8454</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Puno, Perú</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expe">Experiencia</a>
+                    </li><!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li><!--end nav item-->
+                </ul>
+                <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon light-social-icon">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/gc.romario" target="_blank"><i
+                                class="mdi mdi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.tiktok.com/@roma.cuervo?is_from_webapp=1&sender_device=pc"
+                            target="_blank"><i class="iconify" data-icon="ic:baseline-tiktok"></i></a></li>
+                    <li class="list-inline-item"><a href="https://wa.me/+51958274958" target="_blank"><i
+                                class="mdi mdi-whatsapp"></i></a></li>
                 </ul>
             </div>
-            
-            <div class="seccion">
-                <h2><i class="fas fa-star"></i> Habilidades</h2>
-                <div class="habilidades-lista">
-                    <span class="habilidad">Redes inalámbricas</span>
-                    <span class="habilidad">Telecomunicaciones</span>
-                    <span class="habilidad">Programación</span>
-                    <span class="habilidad">Análisis de datos</span>
-                    <span class="habilidad">Seguridad informática</span>
-                    <span class="habilidad">Docencia</span>
-                    <span class="habilidad">Transformación digital</span>
-                    <span class="habilidad">IoT</span>
-                    <span class="habilidad">Linux</span>
-                    <span class="habilidad">Soporte TI</span>
+        </div><!--end container-->
+    </nav><!--end navbar-->
+    <!-- Navbar End -->
+
+    <!-- HOME START-->
+    <section class="bg-modern bg-light bg-animation-right" id="home">
+        <div class="container">
+            <div class="row align-items-center position-relative" style="z-index: 1;">
+                <div class="col-lg-7 col-md-7">
+                    <div class="title-heading mt-5">
+                        <h6 class="sub-title">¡Buscando un Profesional en TIC!</h6>
+                        <h1 class="heading text-primary mb-3">Soy Romario Gomez</h1>
+                        <p class="para-desc text-muted">Ing. Electrónico, Informático & Estadística | Ms. Informática |
+                            Telecomunicaciones | Redes | Administración de Servidores | Soluciones Open Source | Data
+                            Analytics | Desarrollo FullStack | Proyectos de Investigación | Asesoría de Tesis
+                        </p>
+                        <div class="mt-4 pt-2">
+                            <a href="#contact" class="btn btn-primary rounded mb-2 mr-2">Contáctame</a>
+                            <a href="assets/files/CV_jerson.pdf" class="btn btn-outline-primary rounded mb-2">Descargar CV <i
+                                    data-feather="download" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="hero-img">
+                        <img src="images/home/hero.png" class="img-fluid" alt="">
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+        <a href="#about" data-scroll-nav="1"
+            class="mouse-icon d-none d-md-inline-block rounded-pill bg-transparent mouse-down">
+            <span class="wheel position-relative d-block mover"></span>
+        </a>
+    </section><!--end section-->
+    <!-- HOME END-->
+
+    <!-- About Start -->
+    <section class="section pb-3" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-5">
+                    <div class="about-hero">
+                        <img src="images/hero.png" class="img-fluid mx-auto d-block about-tween position-relative"
+                            alt="">
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title mb-0 ml-lg-5 ml-md-3">
+                        <h4 class="title text-primary mb-3">Jerson Romario Gomez Cahuana</h4>
+                        <h6 class="designation mb-3">Apasionado por la <span class="text-primary">Gobernanza de
+                                TI</span></h6>
+                        <p class="text-muted">Experiencia supervisando infraestructura de red, administración de
+                            servidores y desarrollo de soluciones open source. He participado en proyectos de
+                            investigación, optimización de sistemas, gobernanza de TI y asesoría de tesis, apoyando
+                            instituciones educativas y organizaciones tecnológicas.</p>
+                        <p class="text-muted">Apasionado por la innovación tecnológica, Data Analytics, desarrollo
+                            FullStack y gestión eficiente de redes y telecomunicaciones.</p>
+                        <img src="images/sign.png" height="22" alt="">
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">Intereses & Hobbies</h4>
+                            <span></span>
+                        </div>
+                        <p class="text-muted mx-auto para-desc mb-0">Experiencia en redes, telecomunicaciones,
+                            administración de servidores y desarrollo de soluciones open source.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Redes</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="server" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Servidores</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="cpu" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Telecomunicaciones</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="database" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Data Analytics</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="codesandbox" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">FullStack Developer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="bar-chart-2" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Estadística</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="tool" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Open Source</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="book" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Investigación</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="clipboard" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Asesoría de Tesis</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div>
+
+        </div><!--end container-->
+
+        <div class="container-fluid mt-100 mt-60">
+            <div class="rounded py-md-5 py-4" style="background: url('images/fondo_paginas.png') center center;">
+                <div class="container">
+                    <div class="row" id="counter">
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center">
+                                <div class="counter-icon">
+                                    <i data-feather="monitor" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="14">120</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Proyectos de
+                                    Desarrollo de Software</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center">
+                                <div class="counter-icon">
+                                    <i data-feather="server" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="5">15</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Proyectos de TI
+                                </h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center">
+                                <div class="counter-icon">
+                                    <i data-feather="book-open" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="2">10</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Publicaciones /
+                                    Investigaciones</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center">
+                                <div class="counter-icon">
+                                    <i data-feather="users" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="6">30</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Instituciones
+                                    Apoyadas</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end div-->
+        </div><!--end container fluid-->
+    </section>
+    <!-- About end -->
+
+    <!-- Services Start -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">¿Qué Ofrezco?</h4>
+                            <span></span>
+                        </div>
+                        <p class="text-muted mx-auto para-desc mb-0">Ofrezco soluciones profesionales en redes,
+                            telecomunicaciones y administración de servidores, así como desarrollo FullStack y de
+                            software. Además, participo en proyectos de TI, investigación aplicada y análisis de datos.
+                        </p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="server" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Administración de Servidores</h5>
+                            <p class="text-muted mt-3 mb-0">Gestión y mantenimiento de servidores para entornos
+                                académicos y corporativos.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="server" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="wifi" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Redes y Telecomunicaciones</h5>
+                            <p class="text-muted mt-3 mb-0">Diseño, análisis y optimización de redes para instituciones
+                                educativas y proyectos empresariales.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="wifi" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="code" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Desarrollo FullStack</h5>
+                            <p class="text-muted mt-3 mb-0">Creación de aplicaciones web y sistemas completos con
+                                tecnologías modernas y open source.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="code" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="box" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Proyectos de TI</h5>
+                            <p class="text-muted mt-3 mb-0">Desarrollo y gestión de proyectos tecnológicos para mejorar
+                                la infraestructura y servicios de TI.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="box" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="book-open" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Investigación & Publicaciones</h5>
+                            <p class="text-muted mt-3 mb-0">Participación en proyectos de investigación aplicada y
+                                publicaciones académicas en tecnología y telecomunicaciones.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="book-open" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div
+                        class="service-wrapper rounded position-relative text-center border border-footer p-4 pt-5 pb-5">
+                        <div class="icon text-primary">
+                            <i data-feather="users" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title">Soporte a Instituciones</h5>
+                            <p class="text-muted mt-3 mb-0">Brindando apoyo tecnológico a instituciones educativas y
+                                corporativas en infraestructura y sistemas.</p>
+                        </div>
+                        <div class="big-icon">
+                            <i data-feather="users" class="fea icons"></i>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end row-->
+        </div><!--end container-->
+    </section>
+    <!-- Services End -->
+
+    <!-- Resume Start -->
+
+    <!-- Skill & CTA START -->
+    <section class="cta-full border-top" id="expe">
+        <div class="container-fluid">
+            <div class="row position-relative">
+                <div class="col-lg-4 padding-less img" style="background-image:url('images/skills.jpg')"
+                    data-jarallax='{"speed": 0.5}'></div><!-- end col -->
+                <div class="col-lg-8 offset-lg-4">
+                    <div class="cta-full-img-box">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <div class="section-title">
+                                    <div class="titles">
+                                        <h4 class="title title-line text-uppercase mb-4 pb-4">Experiencia Laboral</h4>
+                                        <span></span>
+                                    </div>
+                                    <p class="text-muted mx-auto para-desc mb-0">
+                                        Cuento con experiencia en todas las etapas del ciclo de desarrollo para
+                                        proyectos de tecnologías de Información .
+                                    </p>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <ul class="nav nav-pills flex-column px-0" id="pills-tab" role="tablist">
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded active" id="pills-networking-tab" data-toggle="pill"
+                                            href="#pills-networking" role="tab" aria-controls="pills-networking"
+                                            aria-selected="true">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Networking & Telecom</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded" id="pills-fullstack-tab" data-toggle="pill"
+                                            href="#pills-fullstack" role="tab" aria-controls="pills-fullstack"
+                                            aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Full-Stack & Software</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded" id="pills-data-tab" data-toggle="pill"
+                                            href="#pills-data" role="tab" aria-controls="pills-data"
+                                            aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Data Analytics & IA</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-9 col-md-8 col-12">
+                                <div class="tab-content pl-lg-4" id="pills-tabContent">
+
+                                    <!-- NETWORKING & TELECOM -->
+                                    <div class="tab-pane fade show active" id="pills-networking" role="tabpanel"
+                                        aria-labelledby="pills-networking-tab">
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Linux (Debian / Ubuntu / Server Admin)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:92%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Redes TCP/IP – Routing & Switching (GNS3 /
+                                                Cisco / MikroTik / Aruba / Huawei)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:90%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Virtualización (VMware / Proxmox / VirtualBox
+                                                / GNS3 / CiscoPT)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:87%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">WiFi & Controladores (Omada / Ubiquiti / etc)
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:85%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Monitoreo & Análisis (Wireshark / Kismet /
+                                                MetaSploit / Nmap / Hydra / etc)
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:82%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Ciberseguridad & Hacking Ético</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:78%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- FULL STACK & SOFTWARE -->
+                                    <div class="tab-pane fade" id="pills-fullstack" role="tabpanel"
+                                        aria-labelledby="pills-fullstack-tab">
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Python (Flask, Django, Streamlit)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:88%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">PHP (Laravel / Composer)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:84%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Javascript (Node.js / Front-End)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:80%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">HTML / CSS / Tailwind</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:85%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Bases de Datos (RavenDB, MongoDB, PostgreSQL,
+                                                MariaDB)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:83%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">API REST / GraphQL</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:78%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Apache / JMeter (Pruebas & stress testing)
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:75%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- DATA ANALYTICS & IA -->
+                                    <div class="tab-pane fade" id="pills-data" role="tabpanel"
+                                        aria-labelledby="pills-data-tab">
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Estadística Aplicada (R / Python)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:90%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">IA & Machine Learning</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:82%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">SPSS / Minitab / EViews</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:85%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Dashboards (R Shiny / Streamlit)</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width:84%;">
+                                                    <div class="progress-value d-block text-dark h6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--end tab content-->
+                </div><!--end col-->
+            </div> <!-- end row -->
+        </div> <!-- end about detail -->
+        </div> <!-- end col -->
+        </div><!--end row-->
+        </div><!--end container fluid-->
+    </section><!--end section-->
+
+    <!-- Testimonial End -->
+
+    <!-- Blog Start -->
+    <section class="section bg-light pb-3" id="news">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">Proyectos</h4>
+                            <span></span>
+                        </div>
+                        <p class="text-muted mx-auto para-desc mb-0">Algunos de mis proyectos TIC's mas relevantes son:
+                        </p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post rounded shadow">
+                        <img src="images/blog/01.jpg" class="img-fluid rounded-top" alt="">
+                        <div class="content pt-4 pb-4 p-3">
+                            <ul class="list-unstyled d-flex justify-content-between post-meta">
+                                <li><i data-feather="user" class="fea icon-sm mr-1"></i><a href="javascript:void(0)"
+                                        class="text-dark">Ingeniero Telecomunicaciones</a></li>
+                            </ul>
+                            <h5 class="mb-3">Analista de la Oficina de TIC en la IES Glorioso "San Carlos"</h5>
+                            <ul class="list-unstyled mb-0 pt-3 border-top d-flex justify-content-between">
+                                <li><i class="mdi mdi-calendar-edit mr-1"></i>25 de noviembre, 2024</li>
+                            </ul>
+                        </div><!--end content-->
+                    </div><!--end blog post-->
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post rounded shadow">
+                        <img src="images/blog/02.jpg" class="img-fluid rounded-top" alt="">
+                        <div class="content pt-4 pb-4 p-3">
+                            <ul class="list-unstyled d-flex justify-content-between post-meta">
+                                <li><i data-feather="user" class="fea icon-sm mr-1"></i><a href="javascript:void(0)"
+                                        class="text-dark">Ingeniero Electrónico</a></li>
+                            </ul>
+                            <h5 class="mb-3">Soporte de Networking en la Facultad de Arquitectura y Urbanismo - UNA PUNO
+                            </h5>
+                            <ul class="list-unstyled mb-0 pt-3 border-top d-flex justify-content-between">
+                                <li><i class="mdi mdi-calendar-edit mr-1"></i>10th April, 2020</li>
+                            </ul>
+                        </div><!--end content-->
+                    </div><!--end blog post-->
+                </div><!--end col-->
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post rounded shadow">
+                        <img src="images/blog/03.png" class="img-fluid rounded-top" alt="">
+                        <div class="content pt-4 pb-4 p-3">
+                            <ul class="list-unstyled d-flex justify-content-between post-meta">
+                                <li><i data-feather="user" class="fea icon-sm mr-1"></i><a href="javascript:void(0)"
+                                        class="text-dark">Ingeniero Estadístico e Informático</a></li>
+                            </ul>
+                            <h5 class="mb-3">Análisis geoespacial y temporal de actividades Agropecuarias en el Perú:
+                                Encuesta Nacional Agropecuaria (ENA) 2023-2024</h5>
+                            <ul class="list-unstyled mb-0 pt-3 border-top d-flex justify-content-between">
+                                <li><i class="mdi mdi-calendar-edit mr-1"></i>10th April, 2020</li>
+                            </ul>
+                        </div><!--end content-->
+                    </div><!--end blog post-->
+                </div><!--end col-->
+
+            </div><!--end row-->
+        </div><!--end container-->
+
+        <div class="container-fluid mt-100 mt-60">
+            <div class="rounded-pill py-5" style="background: url('images/hireme.jpeg') center center;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+
+                            <h4 class="text-light title-dark">
+                                Disponible para Proyectos Freelance en Redes, Software y Data.
+                            </h4>
+
+                            <p class="text-white-50 mx-auto mt-4 para-desc" style="max-width: 650px;">
+                                Ingeniero Electrónico e Ingeniero Estadístico e Informático.
+                                Especialista en Redes y Telecomunicaciones, Infraestructura IT,
+                                Desarrollo Full-Stack (PHP, Python, JS), Sistemas Web,
+                                Virtualización, Ciberseguridad y Analítica de Datos.
+                                Experiencia en instituciones educativas, servidores Linux,
+                                automatización y despliegue de soluciones open-source.
+                            </p>
+
+                            <div class="mt-4">
+                                <a href="#contact" class="btn btn-primary mouse-down">
+                                    Contáctame <i data-feather="chevron-down" class="fea icon-sm"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </aside>
-        
-        <main class="perfil-container">
-            <div class="seccion" id="perfil">
-                <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
-                <p>
-                    Ingeniero Electrónico con especialización en Telecomunicaciones, Telemática y Redes. Estudiante de Ingeniería Estadística e Informática y de Maestría en Informática con mención en Gerencia de Tecnologías de Información y Comunicaciones en la Escuela de Posgrado de la UNA - PUNO. Experiencia en análisis, diseño y optimización de redes inalámbricas, así como en la supervisión de infraestructuras de telecomunicaciones. Participación en proyectos de investigación sobre mitigación de interferencias en redes inalámbricas y gestión eficiente del espectro radioeléctrico, utilizando tecnologías emergentes y herramientas de análisis de tráfico. Conocimientos en computación e informática, programación, análisis de datos y seguridad informática. Apasionado por la enseñanza y la transformación digital, orientado a contribuir a la innovación tecnológica, la conectividad sostenible y la capacitación académica.
-                </p>
-            </div>
-            
-            <div class="seccion" id="experiencia">
-                <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
-                <div class="experiencia-lista">
-                    <div class="experiencia-item">
-                        <div class="experiencia-cargo">Especialista de asistencia de TI</div>
-                        <div class="experiencia-empresa">LAXMY TECHNOLOGY E.I.R.L.</div>
-                        <div class="experiencia-periodo">abr. 2025 - actualidad · 5 meses</div>
-                        <div class="experiencia-ubicacion">Puno, Perú · Presencial</div>
-                        <div class="experiencia-descripcion">
-                            Mantenimiento de equipos informáticos, atención de incidencias, soporte a usuarios, instalación de software y gestión de redes. Destacado por actitud proactiva, trabajo en equipo y rápida adaptación a distintos entornos.
-                        </div>
-                    </div>
-                    
-                    <div class="experiencia-item">
-                        <div class="experiencia-cargo">Especialista en soporte técnico</div>
-                        <div class="experiencia-empresa">Lock Raven Shield S.R.L.</div>
-                        <div class="experiencia-periodo">jun. 2023 - actualidad · 2 años 3 meses</div>
-                        <div class="experiencia-ubicacion">Puno, Perú · Híbrido</div>
-                        <div class="experiencia-descripcion">
-                            Soporte técnico, mantenimiento de equipos informáticos y soluciones tecnológicas personalizadas. Instalación, configuración y optimización de redes, reparación de hardware y software. Liderazgo en operaciones y compromiso con la transformación digital.
-                        </div>
-                    </div>
-                    
-                    <div class="experiencia-item">
-                        <div class="experiencia-cargo">Ingeniero Electrónico</div>
-                        <div class="experiencia-empresa">Glorioso Colegio Nacional de San Carlos</div>
-                        <div class="experiencia-periodo">nov. 2024 - mar. 2025 · 5 meses</div>
-                        <div class="experiencia-ubicacion">Puno, Perú · Presencial</div>
-                        <div class="experiencia-descripcion">
-                            Monitoreo del espectro radioeléctrico con herramientas como Kismet. Aplicación de tecnologías OMADA y SND para la gestión dinámica y eficiente del tráfico de red.
-                        </div>
-                    </div>
-                    
-                    <div class="experiencia-item">
-                        <div class="experiencia-cargo">Prácticas en el Área de Redes y Telecomunicaciones</div>
-                        <div class="experiencia-empresa">Universidad Nacional del Altiplano</div>
-                        <div class="experiencia-periodo">mar. 2023 - sept. 2023 · 7 meses</div>
-                        <div class="experiencia-ubicacion">Puno, Perú · Presencial</div>
-                        <div class="experiencia-descripcion">
-                            Supervisión de toda la red informática del campus universitario.
+        </div>
+
+    </section><!--end section-->
+    <!-- Blog Start -->
+
+    <!-- Contact Start -->
+    <section class="section pb-0" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">Contáctame</h4>
+                            <span></span>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="seccion" id="certificaciones">
-                <h2><i class="fas fa-certificate"></i> Licencias y Certificaciones</h2>
-                <div class="cert-lista">
-                    <div class="cert-item">
-                        <div class="cert-titulo">Computer Network (Spanish)</div>
-                        <div class="cert-entidad">Huawei ICT Academy - IFCE</div>
-                        <div class="cert-fecha">Expedición: jul. 2025</div>
-                        <div class="cert-id">ID de la credencial: EBG20250730000030</div>
-                    </div>
 
-                    <div class="cert-item">
-                        <div class="cert-titulo">ROBOTICA EDUCATIVA</div>
-                        <div class="cert-entidad">Colegio de Ingenieros del Perú</div>
-                        <div class="cert-fecha">Expedición: jun. 2025</div>
-                        <div class="cert-id">ID de la credencial: CIP-HVCA-IEPI-RE-70136575-2025</div>
-                    </div>
+            <div class="row">
 
-                    <div class="cert-item">
-                        <div class="cert-titulo">FUNDAMENTOS PRÁCTICOS DE REDES Y SERVIDORES</div>
-                        <div class="cert-entidad">Colegio de Ingenieros del Perú</div>
-                        <div class="cert-fecha">Expedición: may. 2025</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">IT Customer Support Basics</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Introduction to IoT</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Internet de las cosas</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Network Addressing and Basic Troubleshooting</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Networking</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Network Support and Security</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Network Technician Career Path</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Arquitectura de redes</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Networking Basics</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Networking</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Networking Devices and Initial Configuration</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Networking</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Office Básico</div>
-                        <div class="cert-entidad">Fundación Telefónica</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-id">ID de la credencial: e5cd2fc5-5768-447c-9943-0711629206c4</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Office Intermedio</div>
-                        <div class="cert-entidad">Fundación Telefónica</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-id">ID de la credencial: 8e8b6193-5350-4075-b51e-29ff06d7ecea</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Operating Systems Basics</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: mar. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Sistemas operativos</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Computer Hardware Basics</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: ene. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Ciencias de la computación</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Linux Unhatched</div>
-                        <div class="cert-entidad">Cisco</div>
-                        <div class="cert-fecha">Expedición: ene. 2025</div>
-                        <div class="cert-aptitudes">Aptitudes: Linux</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">Excel Profesional</div>
-                        <div class="cert-entidad">Perú Digital</div>
-                        <div class="cert-fecha">Expedición: jun. 2024</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">I Simposio Internacional de Conectividad y su Impacto Económico Social en el Perú</div>
-                        <div class="cert-entidad">Dirección Regional de Transportes y Comunicaciones - Puno</div>
-                        <div class="cert-fecha">Expedición: may. 2022</div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-titulo">X Congreso Internacional de Telecomunicaciones y Temática, Automatización e Instrumentación COINTTEC – 2020</div>
-                        <div class="cert-entidad">Sección Perú del IEEE</div>
-                        <div class="cert-fecha">Expedición: nov. 2020</div>
+                <!-- PHONE -->
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="phone" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Teléfono</h5>
+                            <p class="text-muted">Disponible para coordinación de proyectos, asesorías y soporte
+                                técnico.</p>
+                            <a href="tel:+51XXXXXXXXX" class="text-primary">+51 958274958</a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- EMAIL -->
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="mail" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Email</h5>
+                            <p class="text-muted">Escríbeme para colaboraciones, propuestas o consultas técnicas.</p>
+                            <a href="mailto:tuemail@dominio.com" class="text-primary">fav159yu@gmail.com <br>
+                                jgomezc@est.unap.edu.pe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOCATION -->
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="map-pin" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Ubicación</h5>
+                            <p class="text-muted">Puno, Perú <br> Disponible para proyectos presenciales y
+                                remotos.</p>
+                            <a href="https://maps.app.goo.gl/oEZ4tANFB2K9cZEL9" class="video-play-icon text-primary">Ver
+                                en Google
+                                Maps</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </main>
+        </div>
+    </section>
+    <!-- Contact End -->
+    <div>
+        <br>
     </div>
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <p class="para-desc mx-auto mt-5">
+                        Profesional en Redes, Telecomunicaciones, Ciberseguridad y Desarrollo de Software.
+                        Experto en soluciones open-source, virtualización, automatización y analítica de datos.
+                    </p>
 
-    <!-- Botón para volver al inicio -->
-    <div class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 Jerson Romario Gomez Cahuana. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/romario-gomez/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ravencuervo"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/@jersonromariogomezcahuana8454"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/gc.romario/"><i class="fab fa-facebook"></i></a>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/gc.romario" _blank"><i
+                                    class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a
+                                href="https://www.tiktok.com/@roma.cuervo?is_from_webapp=1&sender_device=pc"
+                                target="_blank"><i class="iconify" data-icon="ic:baseline-tiktok"></i></a></li>
+                        <li class="list-inline-item"><a href="https://wa.me/+51958274958" target="_blank"><i
+                                    class="mdi mdi-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/romario-gomez"
+                                target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:fav159yu@gmail.com"><i
+                                    class="mdi mdi-email"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Botón para volver al inicio
-        const scrollTopBtn = document.getElementById('scrollTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('active');
-            } else {
-                scrollTopBtn.classList.remove('active');
-            }
-        });
-        
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Navegación suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <footer class="footer footer-bar bg-dark">
+        <div class="container text-foot text-center">
+            <p class="mb-0">
+                © 2025 Romario Gomez. Construido con dedicación y tecnologías open-source.
+                Desarrollado por <span class="text-success">Lock Raven Shield S.R.L.</span>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <!-- SLIDER -->
+    <script src="js/owl.carousel.min.js "></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/portfolio-filter.js"></script>
+    <script src="js/magnific.init.js"></script>
+    <!-- Contact -->
+    <script src="js/contact.js"></script>
+    <!-- Counter -->
+    <script src="js/counter.init.js"></script>
+    <!-- Tweenmax Js -->
+    <script src="js/jquery-twennmax.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery-twennmax.init.js"></script>
+    <!-- Feather icon -->
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
 </body>
-</html> 
+
+</html>
